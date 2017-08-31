@@ -11,7 +11,7 @@ Installation
 
 You can download by cloning the `Git Repo and simply installing its requirements::
 
-```sh
+
     apt-get install tor
     nano /etc/tor/torrc
         Edit the torrc with this ADD AUTHENTICATION ON PORT 9050 !!
@@ -24,7 +24,7 @@ You can download by cloning the `Git Repo and simply installing its requirements
     apt-get install python-pip
     pip install -U pip setuptools    
     pip install -r requirements.txt
-```    
+  
 
 Usage
 ------
