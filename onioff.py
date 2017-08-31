@@ -8,7 +8,7 @@ from termcolor import colored
 from bs4 import BeautifulSoup
 from time import sleep
 
-sys.stdout.write('Onion URL Inspector + '\n')
+sys.stdout.write('Onion URL Inspector')
 
 def flushPrint(msg, error=False, ext=False, heavy=False):
     if ext:
