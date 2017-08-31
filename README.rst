@@ -11,11 +11,20 @@ Installation
 
 You can download by cloning the `Git Repo and simply installing its requirements::
 
-    $ git clone "URL TO GITHUB APP HERE"
-    
-    $ cd onioff
-    
-    $ pip install -r requirements.txt
+```sh
+    apt-get install tor
+    nano /etc/tor/torrc
+        Edit the torrc with this ADD AUTHENTICATION ON PORT 9050 !!
+        ControlPort 9051
+        # hashed password below is obtained via `tor --hash-password my_password`
+        HashedControlPassword 16:4B686E879FB96E1460637C8FCB6FEBAEF9C88CCDA997027AE52F2B22C8
+        CookieAuthentication 1        
+    git clone https://github.com/richarddennis/onion_inspector.git
+    cd onion_inspector
+    apt-get install python-pip
+    pip install -U pip setuptools    
+    pip install -r requirements.txt
+```    
 
 Usage
 ------
@@ -28,8 +37,6 @@ To view all available options run:
 
     $ python onioff.py -h
 
-**NOTE**: In order for ONIOFF to work, Tor must be correctly configured and running.
-
 Demo
 -----
 
@@ -38,4 +45,4 @@ Here's a short demo:
 .. image:: https://nikolaskama.me/content/images/2016/09/onioff_demo.png
    :target: https://asciinema.org/a/87557?autoplay=1
 
-(For more demos click `here <https://asciinema.org/~k4m4>`_)
+
