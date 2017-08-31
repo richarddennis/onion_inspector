@@ -2,28 +2,13 @@
 # -.- coding: utf-8 -.-
 # onioff.py
 
-"""
-Copyright (C) 2016 Nikolaos Kamarinakis (nikolaskam@gmail.com)
-See License at nikolaskama.me (https://nikolaskama.me/onioffproject)
-"""
 
 import socket, socks, requests, sys, os, optparse, time, httplib, datetime
 from termcolor import colored
 from bs4 import BeautifulSoup
 from time import sleep
 
-BLUE, RED, WHITE, YELLOW, END = '\33[94m', '\033[91m', '\33[97m', '\33[93m', '\033[0m'
-sys.stdout.write(RED + """
- ██████╗ ███╗   ██╗██╗ ██████╗ ███████╗███████╗
-██╔═══██╗████╗  ██║██║██╔═══██╗██╔════╝██╔════╝
-██║   ██║██╔██╗ ██║██║██║   ██║█████╗  █████╗
-██║   ██║██║╚██╗██║██║██║   ██║██╔══╝  ██╔══╝
-╚██████╔╝██║ ╚████║██║╚██████╔╝██║     ██║
- ╚═════╝ ╚═╝  ╚═══╝╚═╝ ╚═════╝ ╚═╝     ╚═╝ v0.1
-"""  + END + BLUE +
-'\n' + '{0}Onion URL Inspector ({1}ONIOFF{2}){3}'.format(YELLOW, RED, YELLOW, BLUE).center(67) +
-'\n' + 'Made With <3 by: {0}Nikolaos Kamarinakis ({1}k4m4{2}){3}'.format(YELLOW, RED, YELLOW, BLUE).center(67) +
-'\n' + 'Version: {0}0.1{1}'.format(YELLOW, END).center(57) + '\n')
+'\n' + 'Onion URL Inspector + '\n')
 
 def flushPrint(msg, error=False, ext=False, heavy=False):
     if ext:
