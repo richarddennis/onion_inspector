@@ -1,3 +1,8 @@
+
+WORKING !
+
+TODO - Get the onion addresses into a text file and pass that instead of indivual domains, and parallel methods
+
 A simple tool - written in pure python - for inspecting Deep Web URLs (or onions). 
 It takes specified onion links and returns their current status along with the site's title.
 
@@ -37,12 +42,7 @@ To view all available options run:
 
     $ python onioff.py -h
 
-Demo
------
 
-Here's a short demo:
-
-.. image:: https://nikolaskama.me/content/images/2016/09/onioff_demo.png
-   :target: https://asciinema.org/a/87557?autoplay=1
+https://nikolaskama.me/content/images/2016/09/onioff_demo.png
 
 
