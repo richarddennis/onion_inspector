@@ -43,6 +43,3 @@ To view all available options run:
     $ python onioff.py -h
 
 
-https://nikolaskama.me/content/images/2016/09/onioff_demo.png
-
-
